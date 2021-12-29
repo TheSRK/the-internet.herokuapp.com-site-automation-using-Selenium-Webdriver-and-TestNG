@@ -1,5 +1,6 @@
 package alert;
 
+import Pages.AlertPage;
 import base.BaseTests;
 import org.testng.annotations.Test;
 
@@ -8,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 public class AlertTests extends BaseTests {
     @Test
     public void testClickAlert(){
-      var alertPage = homePage.clickJsAlert();
+      AlertPage alertPage = homePage.clickJsAlert();
       alertPage.triggerAlert();
       alertPage.alert_Click();
       String text = alertPage.getResultText();
@@ -17,7 +18,7 @@ public class AlertTests extends BaseTests {
 
     @Test
     public void testClickConfirm(){
-        var alertPage = homePage.clickJsAlert();
+        AlertPage alertPage = homePage.clickJsAlert();
         alertPage.triggerConfirmAlert();
         alertPage.alert_Confirm();
         //alertPage.alert_dismiss();

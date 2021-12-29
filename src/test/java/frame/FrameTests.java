@@ -1,5 +1,6 @@
 package frame;
 
+import Pages.EditorPage;
 import base.BaseTests;
 import org.testng.annotations.Test;
 
@@ -9,7 +10,7 @@ public class FrameTests extends BaseTests {
     @Test
     public void testIFrame(){
         String text = "Hello";
-        var editorPage= homePage.clickWysiwygEditor();
+        EditorPage editorPage= homePage.clickWysiwygEditor();
         editorPage.clearEditorBox();
         editorPage.writeInsideEditor(text);
         String getText = editorPage.getTextFromEditor();
