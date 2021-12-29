@@ -11,6 +11,7 @@ public class HomePage {
     private By wEditorPageLink = By.linkText("WYSIWYG Editor");
     private By frameLink = By.linkText("Frames");
     private By dynamicLoadingLink = By.linkText("Dynamic Loading");
+    private By largeAndDeepDomLink = By.linkText("Large & Deep DOM");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -50,5 +51,11 @@ public class HomePage {
     public DynamicLoadingPage clickDynamicLoading(){
         driver.findElement(dynamicLoadingLink).click();
         return new DynamicLoadingPage(driver);
+    }
+
+    //click large and deep dom link
+    public LargeAndDeepDom clickLargeAndDeepDomLink(){
+        driver.findElement(largeAndDeepDomLink).click();
+        return new LargeAndDeepDom(driver);
     }
 }
