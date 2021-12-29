@@ -5,8 +5,8 @@ Practiced Selenium Webdriver using TestNG framework to automate http://the-inter
 <pre> the-internet.herokuapp.com </pre>
 
 ##Following Java version used
-<prep> java version "1.8.0_291" </prep>
+<pre> java version "1.8.0_291" </pre>
 
 ##Following model is followed
-Page Object Model
+ <pre> Page Object Model </pre>
 
